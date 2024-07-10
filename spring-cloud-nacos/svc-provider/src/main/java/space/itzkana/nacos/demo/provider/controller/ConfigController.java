@@ -1,4 +1,4 @@
-package space.itzkana.nacos.demo.controller;
+package space.itzkana.nacos.demo.provider.controller;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
@@ -7,7 +7,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import space.itzkana.nacos.demo.properties.RedisProperties;
+import space.itzkana.nacos.demo.provider.properties.RedisProperties;
 
 @RestController
 @RequestMapping("config")

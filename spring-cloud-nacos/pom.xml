@@ -10,7 +10,8 @@
     </parent>
     <groupId>space.itzkana</groupId>
     <artifactId>spring-cloud-nacos</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
     <name>spring-cloud-nacos</name>
     <description>spring-cloud-nacos</description>
     <url/>
@@ -20,6 +21,10 @@
     <developers>
         <developer/>
     </developers>
+    <modules>
+        <module>svc-provider</module>
+        <module>svc-consumer</module>
+    </modules>
     <scm>
         <connection/>
         <developerConnection/>
@@ -29,8 +34,11 @@
     <properties>
         <java.version>21</java.version>
         <spring.cloud.version>2023.0.1</spring.cloud.version>
+        <spring.cloud.openfeign.version>4.1.2</spring.cloud.openfeign.version>
+        <spring.cloud.loadbalancer.version>4.1.2</spring.cloud.loadbalancer.version>
         <!-- 版本匹配: https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E -->
-        <alibaba.cloud.version>2023.0.1.0</alibaba.cloud.version>
+        <alibaba.nacos.version>2023.0.1.0</alibaba.nacos.version>
+        <openfeign.okhttp.version>13.3</openfeign.okhttp.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -47,11 +55,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>${alibaba.cloud.version}</version>
         </dependency>
 
         <dependency>

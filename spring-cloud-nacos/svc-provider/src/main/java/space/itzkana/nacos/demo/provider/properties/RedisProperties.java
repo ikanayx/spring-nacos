@@ -1,4 +1,4 @@
-package space.itzkana.nacos.demo.properties;
+package space.itzkana.nacos.demo.provider.properties;
 
 import lombok.Data;
 import lombok.ToString;
